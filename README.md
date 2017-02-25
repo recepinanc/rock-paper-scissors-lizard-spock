@@ -25,4 +25,6 @@ ruby rpsls.rb
 - Spock ***vaporizes*** Rock
 - Rock ***crushes*** Scissors
 
+![RPSLS Game](rock-paper-scissors-lizard-spock/rpsls-gameplay.gif "## Little Demonstration")
+
 Have Fun!
