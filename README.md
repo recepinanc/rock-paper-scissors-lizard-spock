@@ -1,13 +1,28 @@
-# ruby-skeleton
-A Ruby Project Template - Skeleton
+# Rock Paper Scissors Lizard Spock
 
-This project is completely based on Zed A. Shaw's great tutorial: [Learn The Ruby Hard Way](https://learnrubythehardway.org/book/ex46.html)
+## Description
 
-# Usage
-1. Just clone this repo to your local:
-`git clone git@github.com:recepinanc/ruby-skeleton.git`
+Rock Paper Scissors Lizard Spock is the extended version of the game Rock Paper Scissors, and was shown in [The Big Bang Theory](http://bigbangtheory.wikia.com/wiki/Rock_Paper_Scissors_Lizard_Spock).
 
-2. Change the _**NAME**_ to the name of your project.
 
-# Further Understanding
-If you are a beginner just like me, following [this awesome tutorial](https://learnrubythehardway.org/book/ex46.html) might be useful.
+## How to Play
+```
+git clone git@github.com:recepinanc/rock-paper-scissors-lizard-spock.git
+cd lib
+ruby rpsls.rb
+```
+
+## Rules
+
+- Scissors ***cut*** Paper
+- Paper ***covers*** Rock
+- Rock ***crushes*** Lizard
+- Lizard ***poisons*** Spock
+- Spock ***smashes*** Scissors
+- Scissors ***decapitate*** Lizard
+- Lizard ***eats*** Paper
+- Paper ***disproves*** Spock
+- Spock ***vaporizes*** Rock
+- Rock ***crushes*** Scissors
+
+Have Fun!
