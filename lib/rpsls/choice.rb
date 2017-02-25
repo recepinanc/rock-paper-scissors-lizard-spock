@@ -33,27 +33,11 @@ class Choice
     ]
 
     @results = [
-      "Paper covers Rock!",
-      "Rock crushes Scissors!",
-      "Rock crushes Lizard!",
-      "Spock vaporizes Rock!",
-      "Paper covers Rock!",
-      "Scissors cuts Paper!",
-      "Lizard eates Paper!",
-      "Paper disproves Spock!",
-      "Rock crushes Scissors!",
-      "Scissors cuts Paper!",
-      "Scissors decapitates Lizard!",
-      "Spock smashes Scissors!",
-      "Rock crushes Lizard!",
-      "Lizard eates Paper!",
-      "Scissors decapitates Lizard!",
-      "Lizard poisons Spock!",
-      "Spock vaporizes Rock!",
-      "Paper disproves Spock!",
-      "Spock smashes Scissors!",
-      "Lizard poisons Spock!",
-      "Paper disproves Spock!",
+      ["Tie!","Paper covers Rock!","Rock crushes Scissors!","Rock crushes Lizard!","Spock vaporizes Rock!"],
+      ["Paper covers Rock!","Tie","Scissors cuts Paper!","Lizard eates Paper!","Paper disproves Spock!"],
+      ["Rock crushes Scissors!","Scissors cuts Paper!","Tie!","Scissors decapitates Lizard!","Spock smashes Scissors!"],
+      ["Rock crushes Lizard!","Lizard eates Paper!","Scissors decapitates Lizard!","Tie!","Lizard poisons Spock!"],
+      ["Spock vaporizes Rock!","Paper disproves Spock!","Spock smashes Scissors!","Lizard poisons Spock!","Tie!"]
     ]
   end
 
