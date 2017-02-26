@@ -55,12 +55,10 @@ class Game
     choice_fight = Choice.new
     result = choice_fight.win_lose(@player_1.choice-1, @player_2.choice-1)
     if result == 0
-      @player_1.lost
       @player_2.won
       puts choice_fight.results(@player_1.choice-1, @player_2.choice-1)
     elsif result == 2
       @player_1.won
-      @player_2.lost
       puts choice_fight.results(@player_1.choice-1, @player_2.choice-1)
     else
       puts "Tie!"
