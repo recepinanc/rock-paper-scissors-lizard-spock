@@ -24,6 +24,11 @@ class Choice
   attr_accessor :results
 
   def initialize
+    @win_lose_matrix = win_lose_matrix
+    @results = set_results
+  end
+
+  def win_lose_matrix
     @win_lose_matrix = [
       [1,0,2,2,0],
       [2,1,0,0,2],
@@ -31,7 +36,9 @@ class Choice
       [0,2,0,1,2],
       [2,0,2,0,1]
     ]
+  end
 
+  def set_results
     @results = [
       ["Tie!","Paper covers Rock!","Rock crushes Scissors!","Rock crushes Lizard!","Spock vaporizes Rock!"],
       ["Paper covers Rock!","Tie","Scissors cuts Paper!","Lizard eates Paper!","Paper disproves Spock!"],

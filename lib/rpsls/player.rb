@@ -1,11 +1,19 @@
+require 'pry'
+
 class Player
   
+  EMPTY_STRING_CHECK_REGEX = /^\s*$/
+
   attr_accessor :name ,:score, :choice
 
   def initialize(params = {})
     @name = params.fetch(:name, "Guest")
     @score = params.fetch(:score, 0)
     @choice = params.fetch(:choice, nil)
+
+    if (@name =~ EMPTY_STRING_CHECK_REGEX) == 0
+      @name = "Guest"
+    end
   end
 
   def won
