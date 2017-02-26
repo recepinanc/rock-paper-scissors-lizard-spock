@@ -28,7 +28,7 @@ class Game
     puts "Player 2, enter your name: "
     player_2_name = gets.chomp
     if (player_2_name =~ EMPTY_STRING_CHECK_REGEX) == 0
-      player_1_name = "Guest-2"
+      player_2_name = "Guest-2"
     end
     @player_2 = Player.new(name: player_2_name)
   end
