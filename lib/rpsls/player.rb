@@ -1,5 +1,3 @@
-require 'pry'
-
 class Player
   
   EMPTY_STRING_CHECK_REGEX = /^\s*$/
