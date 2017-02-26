@@ -1,12 +1,11 @@
 require 'io/console'
 
 class Game
-  attr_accessor :total_turns, :player_1, :player_2, :choice_fight
+  attr_accessor :total_turns, :player_1, :player_2
 
   def initialize(options = {})
     @total_turns = options.fetch(:total_turns, 1)
     @players = {}
-    @choice_fight = Choice.new
     setup
   end
 
@@ -44,18 +43,16 @@ class Game
   end
 
   def fight
-    choice_1 = @player_1.choice - 1
-    choice_2 = @player_2.choice - 1
+    choice_fight = Choice.new
 
-    case @choice_fight.win_lose(choice_1, choice_2)
+    case choice_fight.win_lose(@player_1, @player_2)
     when 0
       @player_2.won
     when 2
       @player_1.won
     end
 
-    puts @choice_fight.results(choice_1, choice_2)
-    puts "\nSCORES : #{@player_1.name} : #{@player_1.score} , #{@player_2.name} : #{@player_2.score}"
+    puts choice_fight.results(@player_1, @player_2), "\nSCORES : #{@player_1.name} : #{@player_1.score} , #{@player_2.name} : #{@player_2.score}"
   end
 
   def winner

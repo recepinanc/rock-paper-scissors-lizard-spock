@@ -49,10 +49,10 @@ class Choice
   end
 
   def win_lose(choice_1, choice_2)
-    @win_lose_matrix[choice_1][choice_2]
+    @win_lose_matrix[choice_1.choice-1][choice_2.choice-1]
   end
 
   def results(choice_1, choice_2)
-    @results[choice_1][choice_2]
+    @results[choice_1.choice-1][choice_2.choice-1]
   end
 end
